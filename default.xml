@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
   <remote  name="aosp"
-           fetch=".." />
-           
-    <remote  name="gh"
+           fetch="https://android.googlesource.com/" />
+  <remote  name="gh"
            fetch="https://github.com/" />
-           
+  <remote  name="um"
+           fetch="https://github.com/UBERMALLOW/" />
+  <remote name="bb"
+           fetch="https://bitbucket.org/" />
+  <default revision="refs/tags/android-6.0.1_r13"
+           remote="aosp"
+           sync-j="4" />
   <default revision="refs/tags/android-6.0.1_r11"
            remote="aosp"
            sync-j="4" />
