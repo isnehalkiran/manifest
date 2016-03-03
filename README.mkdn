@@ -6,7 +6,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the AI-OpenSource trees, use a command like this:
 
-    repo init -u https://github.com/isnehalkiran/manifest.git -b master
+    repo init -u https://github.com/isnehalkiran/manifest.git -b caf
 
 Then to sync up:
 
