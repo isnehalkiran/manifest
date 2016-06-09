@@ -2,13 +2,9 @@
 <manifest>
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
-  <remote  name="gh"
+  <remote  name="github"
            fetch="https://github.com/" />
-  <remote  name="um"
-           fetch="https://github.com/UBERMALLOW/" />
-  <remote name="bb"
-           fetch="https://bitbucket.org/" />
-  <default revision="refs/tags/android-6.0.1_r11"
+  <default revision="rrefs/tags/android-6.0.1_r46"
            remote="aosp"
            sync-j="4" />
 
@@ -27,6 +23,10 @@
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
+  <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
+  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
+  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -283,6 +283,7 @@
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
+  <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
@@ -307,7 +308,6 @@
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" groups="pdk-fs" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
@@ -360,9 +360,6 @@
   <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Telephony" name="platform/packages/services/Telephony" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" groups="pdk-fs" />
-  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" groups="pdk-fs" />
-  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" groups="pdk-fs" />
-  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" />
   <project path="prebuilts/clang/linux-x86/host/3.6" name="platform/prebuilts/clang/linux-x86/host/3.6" groups="pdk,linux" />
@@ -410,16 +407,5 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-<!-- BEGIN CYANOGENMOD -->
-  <project name="AICP/device_motorola_clark" path="device/motorola/clark" revision="mm6.0" remote="gh" />
-  <project name="AICP/proprietary_vendor_motorola" path="vendor/motorola" revision="mm6.0" remote="gh" />
-  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" revision="cm-13.0" remote="gh" />
-  <project name="CyanogenMod/android_device_qcom_sepolicy" path="device/qcom/sepolicy" revision="cm-13.0" remote="gh" />
-  <project name="CyanogenMod/android_hardware_sony_thermanager" path="hardware/sony/thermanager" revision="cm-13.0" remote="gh" />
-  <project name="CyanogenMod/android_hardware_sony_timekeep" path="hardware/sony/timekeep" revision="cm-13.0" remote="gh" />
-  <project path="hardware/qcom/audio-caf/msm8994" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="gh" revision="cm-13.0-caf-8994" />
-  <project path="hardware/qcom/display-caf/msm8994" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="gh" revision="cm-13.0-caf-8994" />
-  <project path="hardware/qcom/media-caf/msm8994" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" remote="gh" revision="cm-13.0-caf-8994" />
-  <project name="pawitp/android_device_samsung_i9082" path="device/samsung/i9082" remote="gh" revision="aosp-6.0"/>
-  <!-- END CYANOGENMOD -->
+
 </manifest>
