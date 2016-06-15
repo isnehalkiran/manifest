@@ -6,8 +6,10 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the AI-OpenSource trees, use a command like this:
 
-    repo init -u https://github.com/isnehalkiran/manifest.git -b caf
+    repo init -u https://github.com/isnehalkiran/manifest.git -b 2
+    repo init --reference=/media/k2wlxda/data/cm-source/aosp -u https://github.com/isnehalkiran/manifest.git -g all,-notdefault,-device,-mips,-x86,-darwin,-intel -b 2
+
 
 Then to sync up:
 
-    repo sync
+    repo sync -c -f --force-sync --no-tags --no-clone-bundle -j8
