@@ -142,7 +142,7 @@
   <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2"/>
   <project groups="pdk-cw-fs" name="platform/external/libmtp" path="external/libmtp"/>
   <project name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack"/>
-  <project groups="pdk" name="platform/external/libnfc-nci" path="external/libnfc-nci"/>
+  <project name="OnePlusOSS/external_libnfc-nci" path="external/libnfc-nci" remote="oneplus" revision="oneplus3/6.0.1"/> 
   <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
   <project name="platform/external/libnfnetlink" path="external/libnfnetlink"/>
   <project groups="pdk" name="platform/external/libnl" path="external/libnl"/>
@@ -289,7 +289,7 @@
   <project groups="pdk-cw-fs" name="platform/frameworks/webview" path="frameworks/webview"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm"/>
   <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
-  <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware"/>
+  <project name="OnePlusOSS/android_hardware_libhardware" path="hardware/libhardware" remote="oneplus" revision="oneplus3/6.0.1"/> 
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
   <project groups="qcom,default" name="OnePlusOSS/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project groups="qcom" name="OnePlusOSS/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="oneplus" revision="oneplus3/6.0.1"/>
@@ -332,7 +332,7 @@
   <project name="platform/packages/apps/Mms" path="packages/apps/Mms"/>
   <project name="platform/packages/apps/Music" path="packages/apps/Music"/>
   <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX"/>
-  <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc"/>
+  <project name="OnePlusOSS/packages_apps_Nfc" path="packages/apps/Nfc" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer"/>
   <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller"/>
   <project name="platform/packages/apps/Phone" path="packages/apps/Phone"/>
@@ -341,7 +341,7 @@
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision"/>
   <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox"/>
   <project name="platform/packages/apps/Settings" path="packages/apps/Settings"/>
-  <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService"/>
+  <project name="OnePlusOSS/packages_apps_SmartCardService" path="packages/apps/SmartCardService" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera"/>
   <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder"/>
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts"/>
