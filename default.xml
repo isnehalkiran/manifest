@@ -148,6 +148,7 @@
   <project groups="pdk" name="platform/external/libnl" path="external/libnl"/>
   <project groups="pdk" name="platform/external/libogg" path="external/libogg"/>
   <project groups="pdk" name="platform/external/libopus" path="external/libopus"/>
+  <project name="OnePlusOSS/external_libp61-jcop-kit" path="external/libp61-jcop-kit" remote="oneplus" revision="oneplus3/6.0.1"/> 
   <project groups="pdk,pdk-cw-fs" name="platform/external/libpcap" path="external/libpcap"/>
   <project groups="pdk-cw-fs" name="platform/external/libphonenumber" path="external/libphonenumber"/>
   <project groups="pdk" name="platform/external/libpng" path="external/libpng"/>
