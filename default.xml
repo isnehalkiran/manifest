@@ -4,11 +4,15 @@
   <remote  name="aosp"
              fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"/>
+           
+  <remote  name="github"
+           fetch="git://github.com/" />
+           
   <default revision="refs/tags/android-n-preview-3"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="isnehalkiran/build" groups="pdk,tradefed" >
+  <project path="build" name="isnehalkiran/build" groups="pdk,tradefed" revision="n" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
