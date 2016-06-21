@@ -82,6 +82,7 @@
   <project groups="pdk-cw-fs" name="platform/external/embunit" path="external/embunit"/>
   <project groups="pdk-cw-fs" name="platform/external/emma" path="external/emma"/>
   <project groups="pdk-cw-fs" name="platform/external/esd" path="external/esd"/>
+  <project name="OnePlusOSS/external_libese-spi" path="external/libese-spi" remote="oneplus" revision="oneplus3/6.0.1"/>
   <project groups="pdk" name="platform/external/expat" path="external/expat"/>
   <project groups="pdk-cw-fs" name="platform/external/eyes-free" path="external/eyes-free"/>
   <project groups="pdk" name="platform/external/f2fs-tools" path="external/f2fs-tools"/>
