@@ -3,6 +3,9 @@
   <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="LA.HB.1.3.1.c1"/>
     <remote fetch=".." name="oneplus" />
+    <remote  name="aosp"
+             fetch="https://android.googlesource.com"
+             review="android-review.googlesource.com"/>
     
   <project groups="pdk-cw-fs" name="device/common" path="device/common"/>
   <project groups="pdk" name="device/generic/arm64" path="device/generic/arm64"/>
@@ -394,7 +397,7 @@
   <project groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk"/>
   <project groups="linux,pdk,pdk-cw-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5"/>
   <project groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel"/>
-  <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk"/>
+  <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" remote="aosp" revision="android-6.0.1_r46"/>
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools"/>
   <project groups="pdk-cw-fs" name="platform/sdk" path="sdk"/>
   <project groups="pdk" name="platform/system/bt" path="system/bt"/>
