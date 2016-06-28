@@ -8,11 +8,11 @@
   <remote  name="github"
            fetch="git://github.com/" />
            
-  <default revision="refs/tags/android-n-preview-3"
+  <default revision="refs/tags/android-n-preview-4"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="isnehalkiran/build" groups="pdk,tradefed" revision="n" remote="github" >
+  <project path="build" name="platform/build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -324,8 +324,6 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
-  <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
-  <project path="hardware/mediatek" name="platform/hardware/mediatek" groups="mediatek,mediatek_wear" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
